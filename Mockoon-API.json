@@ -1,0 +1,240 @@
+{
+  "uuid": "2089dc76-2b01-4ce1-8f67-a31e3b737243",
+  "lastMigration": 24,
+  "name": "Mockoon API",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 5002,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "0ca2be69-4fab-450b-b85a-e2ee74fdcb31",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/tutorials",
+      "responses": [
+        {
+          "uuid": "a708b3a6-a805-40e9-be19-861b31aebab5",
+          "body": "[\r\n    {\r\n        \"id\": \"1\",\r\n        \"title\": \"How to discover\",\r\n        \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin ligula eu leo tincidunt, quis scelerisque magna dapibus. Sed eget ipsum vel arcu vehicula ullamcorper.\"\r\n    },\r\n    {\r\n        \"id\": \"2\",\r\n        \"title\": \"How to be neat\",\r\n        \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin ligula eu leo tincidunt, quis scelerisque magna dapibus. Sed eget ipsum vel arcu vehicula ullamcorper.\"\r\n    }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "419bce4c-f80a-40ab-a4b3-b3abf06aeb18",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "api/tutorials",
+      "responses": [
+        {
+          "uuid": "b42a538e-856a-4ca0-9b16-349c045c4b5b",
+          "body": "{{body}}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "61dae7bf-7d71-4871-a902-95616e783276",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "api/tutorials/:id",
+      "responses": [
+        {
+          "uuid": "70564f92-ebf0-4b85-b366-57b5b923e31b",
+          "body": "{{body}}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "cd4247c2-cae0-404e-8771-8834e3dc1a2f",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "api/tutorials/:id",
+      "responses": [
+        {
+          "uuid": "63a4f448-3a96-49b5-a84b-407f1d55d7d5",
+          "body": "{{body}}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "",
+              "value": "",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "5b29f6e7-2c06-4916-b50c-979d2793c1db",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "api/tutorials",
+      "responses": [
+        {
+          "uuid": "49109dd1-2b97-441f-a693-fe5b4be889dd",
+          "body": "{{body}}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "38f0e739-2082-4d34-976a-591540ca0b13",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/tutorials/:title",
+      "responses": [
+        {
+          "uuid": "054f0fcb-a31f-4afd-ad2a-ffd0e0ec6129",
+          "body": "[\r\n    {\r\n        \"id\": \"1\",\r\n        \"title\": \"How to discover\",\r\n        \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin ligula eu leo tincidunt, quis scelerisque magna dapibus. Sed eget ipsum vel arcu vehicula ullamcorper.\"\r\n    },\r\n    {\r\n        \"id\": \"2\",\r\n        \"title\": \"How to be neat\",\r\n        \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin ligula eu leo tincidunt, quis scelerisque magna dapibus. Sed eget ipsum vel arcu vehicula ullamcorper.\"\r\n    }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "title",
+              "value": "How to discover",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "params",
+              "modifier": "title",
+              "value": "How to be neat",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
